@@ -6,10 +6,10 @@ import java.io.IOException;
 public class Program {
     public static void main(String[] args) {
 
-        File diretorio = new File("/home/arcanjo/learning");
+        File diretorio = new File("/home/arcanjo/learning/files");
         System.out.println("Diretorio existe? " + diretorio.exists());
         if (!diretorio.exists()) {
-            diretorio.mkdir();
+            diretorio.mkdirs();
             System.out.println("Criando um diretorio." + diretorio.exists());
         }
         try {
